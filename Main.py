@@ -1,45 +1,41 @@
-# Latihan  konversi  satuan temperatur
+## KOMPARASI (Membandingkan nilai)
 
-# Program konversi celcius ke satuan lain
+# Setiap hasil dari komparasi adalah boolean
 
-print("\nPROGRAM KONVESI TEMPERATUR\n")
+# >,<,>=,<=,=,!=,is,is not
 
-# celcius = float(input('Masukkan suhu dalam  celcius : '))
-# print('suhu adalah ', celcius, ' Celcius')
+a = 4
+b = 2
 
-# # raemur
-# reamur = (4 / 5) * celcius
-# print('suhu reamur adalah ', reamur, ' Reamur')
-
-# # fahrenheit
-# fahrenheit = ((9 / 5) * celcius) + 32
-# print('suhu fahrenheit adalah ', fahrenheit, ' Fahrenheit')
+# Lebih besar dari
+hasil = a > 3
+print(a, '>', 3, '=', hasil)
 
 
-# # kelvin
-# kelvin = celcius + 273
-# print('suhu kelvin adalah ', kelvin, ' Kelvin')
+# Sama dengan 
 
-# ## TUGAS
-# # fahrenheit ke kelvin
+hasil = a == 4
+print(a, '==', 4, '=', hasil)
 
-# fahrenheit = float(input('Masukkan suhu dalam fahrenheit: '))
-# print('suhu fahrenheit adalah ', fahrenheit, ' fahrenheit')
+#  Tidaj Sama dengan 
 
-# # ubah dulu fahrenheit ke celcius
-# # celcius = (5 / 9) * (fahrenheit - 32)
-# # print('suhu celcius adalah ', celcius, ' celcius')
+hasil = a != 4
+print(a, '!=', 4, '=', hasil)
 
-# # lalu ubah celcius ke kelvin
+# is sebagai komparasi objek
+x = 5 # assigment membuat objek 
+y = 5
+print('nilai x = ', x, 'id = ', hex(id(x)))
+print('nilai y = ', y, 'id = ', hex(id(y)))
 
-# # # kelvin
-# kelvin = (5 / 9) * (fahrenheit - 32) + 273
-# print('suhu kelvin adalah ', kelvin, ' Kelvin')
+hasil = x is not y
+print('x is y = ', hasil)
 
-#kelvin ke fahrenheit
+# is sebagai komparasi objek
+x = 5 # assigment membuat objek 
+y = 6
+print('nilai x = ', x, 'id = ', hex(id(x)))
+print('nilai y = ', y, 'id = ', hex(id(y)))
 
-kelvin = float(input('Masukkan suhu dalam kelvin: '))
-print('suhu kelvin adalah ', kelvin, ' kelvin')
-
-fahrenheit = ((kelvin - 273) * (9 / 5)) + 32
-print('suhu fahrenheit adalah ', fahrenheit, ' fahrenheit')
+hasil = x is  not y
+print('x is y = ', hasil)
