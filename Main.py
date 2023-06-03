@@ -1,15 +1,53 @@
-# input User
+# Operasi Aritmatika
 
-# # data dimasukkan adalah string
-# data = input("Masukkan data: ")
-# print("data = ", data, "type = ", type(data))
+a = 10
+b = 3
 
-# # Jikaingin mengambil integer maka kita casting ke integer
+# Operasi Penjumlahan +
+hasil = a + b
+print(a, " + ", b, " = ", hasil)
 
-# angka = float(input("Masukkan angka: "))
-# angka = int(input("Masukkan angka: "))
-# print("data = ", angka, "type = ", type(angka))
+# Operasi Pengurangan - 
+hasil = a - b
+print(a, " - ", b, " = ", hasil)
 
-# Untuk Boolen
-data_boolean = bool(int(input("masukkan nilai boolean: ")))
-print("data = ", data_boolean, "type = ", type(data_boolean))
+# Operasi Perkalian *
+hasil = a * b
+print(a, " * ", b, " = ", hasil)
+
+# Operasi Pembagian /
+hasil = a / b
+print(a, " / ", b, " = ", hasil)
+
+# Operasi eksponen (pangkat) **
+hasil = a ** b
+print(a, " ** ", b, " = ", hasil)
+
+# Operasi modulus (sisa bagi) %
+hasil = a % b
+print(a, " % ", b, " = ", hasil)
+
+# Operasi flow division (kebalikan modulus) //
+hasil = a // b
+print(a, " // ", b, " = ", hasil)
+
+
+## prioritas operasi
+
+x = 3
+y = 2
+z = 4
+hasil = x ** y * (z + x) / y - y % z //x
+print(x,'**',y,'*(',z,'+',x,')/',y,'-',y,'%',z,'//',x)
+print(hasil)
+
+
+hasil = x + y * z
+print(x,'+',y,'*',z,'= ', hasil)
+
+
+## Urutan prioritas
+# ()
+# **
+# *, /, %, //
+# +, -
