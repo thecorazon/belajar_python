@@ -1,53 +1,45 @@
-# Operasi Aritmatika
+# Latihan  konversi  satuan temperatur
 
-a = 10
-b = 3
+# Program konversi celcius ke satuan lain
 
-# Operasi Penjumlahan +
-hasil = a + b
-print(a, " + ", b, " = ", hasil)
+print("\nPROGRAM KONVESI TEMPERATUR\n")
 
-# Operasi Pengurangan - 
-hasil = a - b
-print(a, " - ", b, " = ", hasil)
+# celcius = float(input('Masukkan suhu dalam  celcius : '))
+# print('suhu adalah ', celcius, ' Celcius')
 
-# Operasi Perkalian *
-hasil = a * b
-print(a, " * ", b, " = ", hasil)
+# # raemur
+# reamur = (4 / 5) * celcius
+# print('suhu reamur adalah ', reamur, ' Reamur')
 
-# Operasi Pembagian /
-hasil = a / b
-print(a, " / ", b, " = ", hasil)
-
-# Operasi eksponen (pangkat) **
-hasil = a ** b
-print(a, " ** ", b, " = ", hasil)
-
-# Operasi modulus (sisa bagi) %
-hasil = a % b
-print(a, " % ", b, " = ", hasil)
-
-# Operasi flow division (kebalikan modulus) //
-hasil = a // b
-print(a, " // ", b, " = ", hasil)
+# # fahrenheit
+# fahrenheit = ((9 / 5) * celcius) + 32
+# print('suhu fahrenheit adalah ', fahrenheit, ' Fahrenheit')
 
 
-## prioritas operasi
+# # kelvin
+# kelvin = celcius + 273
+# print('suhu kelvin adalah ', kelvin, ' Kelvin')
 
-x = 3
-y = 2
-z = 4
-hasil = x ** y * (z + x) / y - y % z //x
-print(x,'**',y,'*(',z,'+',x,')/',y,'-',y,'%',z,'//',x)
-print(hasil)
+# ## TUGAS
+# # fahrenheit ke kelvin
 
+# fahrenheit = float(input('Masukkan suhu dalam fahrenheit: '))
+# print('suhu fahrenheit adalah ', fahrenheit, ' fahrenheit')
 
-hasil = x + y * z
-print(x,'+',y,'*',z,'= ', hasil)
+# # ubah dulu fahrenheit ke celcius
+# # celcius = (5 / 9) * (fahrenheit - 32)
+# # print('suhu celcius adalah ', celcius, ' celcius')
 
+# # lalu ubah celcius ke kelvin
 
-## Urutan prioritas
-# ()
-# **
-# *, /, %, //
-# +, -
+# # # kelvin
+# kelvin = (5 / 9) * (fahrenheit - 32) + 273
+# print('suhu kelvin adalah ', kelvin, ' Kelvin')
+
+#kelvin ke fahrenheit
+
+kelvin = float(input('Masukkan suhu dalam kelvin: '))
+print('suhu kelvin adalah ', kelvin, ' kelvin')
+
+fahrenheit = ((kelvin - 273) * (9 / 5)) + 32
+print('suhu fahrenheit adalah ', fahrenheit, ' fahrenheit')
