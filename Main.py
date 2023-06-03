@@ -1,41 +1,68 @@
-## KOMPARASI (Membandingkan nilai)
+# Operasi Logika atau Boolean
 
-# Setiap hasil dari komparasi adalah boolean
+# not, or, and, xor
 
-# >,<,>=,<=,=,!=,is,is not
+# NOT
+print('======NOT=====')
+a = False
+c = not a
+print('data boolean a = ', a)
+print('-----------NOT')
+print('data boolean c = ', c)
 
-a = 4
-b = 2
+# OR
+print('======OR=====')
+a = False
+b = False
+c = a or b
+print(a, 'OR', b, '=',c)
+a = False
+b = True
+c = a or b
+print(a, 'OR', b, '=',c)
+a = True
+b = False
+c = a or b
+print(a, 'OR', b, '=',c)
+a = True
+b = True
+c = a or b
+print(a, 'OR', b, '=',c)
 
-# Lebih besar dari
-hasil = a > 3
-print(a, '>', 3, '=', hasil)
+# and
+print('======and=====')
+a = False
+b = False
+c = a and b
+print(a, 'and', b, '=',c)
+a = False
+b = True
+c = a and b
+print(a, 'and', b, '=',c)
+a = True
+b = False
+c = a and b
+print(a, 'and', b, '=',c)
+a = True
+b = True
+c = a and b
+print(a, 'and', b, '=',c)
 
-
-# Sama dengan 
-
-hasil = a == 4
-print(a, '==', 4, '=', hasil)
-
-#  Tidaj Sama dengan 
-
-hasil = a != 4
-print(a, '!=', 4, '=', hasil)
-
-# is sebagai komparasi objek
-x = 5 # assigment membuat objek 
-y = 5
-print('nilai x = ', x, 'id = ', hex(id(x)))
-print('nilai y = ', y, 'id = ', hex(id(y)))
-
-hasil = x is not y
-print('x is y = ', hasil)
-
-# is sebagai komparasi objek
-x = 5 # assigment membuat objek 
-y = 6
-print('nilai x = ', x, 'id = ', hex(id(x)))
-print('nilai y = ', y, 'id = ', hex(id(y)))
-
-hasil = x is  not y
-print('x is y = ', hasil)
+# ^
+print('======^=====')
+a = False
+b = False
+c = a ^ b
+print(a, '^', b, '=',c)
+a = False
+b = True
+c = a ^ b
+print(a, '^', b, '=',c)
+a = True
+b = False
+c = a ^ b
+print(a, '^', b, '=',c)
+a = True
+b = True
+c = a ^ b
+print(a, '^', b, '=',c)
