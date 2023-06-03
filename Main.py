@@ -1,38 +1,63 @@
-# tipe data
+# Casting Tipe Data
+# merubah satu tipe ke tipe lain
+# tipe data {int, float, str, bool}
 
-# angka satuan (integer)
-data_integer = 100000
-print(type(data_integer))
-print("data : ", data_integer)
-print("- bertipe : ", type(data_integer))
 
-# float(desimal)
-data_float = 1.7
-print("data : ", data_float)
-print("- bertipe : ", type(data_float))
+## INTEGER
+print("+++++++Integer++++++")
+data_int = 9
+print("data = ", data_int, " tipe = ", type(data_int))
 
-# string(kumpulan karakter)
-data_string = "Kidomaru 10"
-print("data : ", data_string)
-print("- bertipe : ", type(data_string))
+data_float = float(data_int)
+data_str = str(data_int)
+data_bool = bool(data_int) # false hanya jika nilai int = 0
 
-# boolean (true/false)
+
+print("data = ", data_float, " tipe = ", type(data_float))
+print("data = ", data_str, " tipe = ", type(data_str))
+print("data = ", data_bool, " tipe = ", type(data_bool))
+
+print('\n')
+
+## FLOAT
+print("+++++++Float++++++")
+data_float = 9.8
+print("data = ", data_float, " tipe = ", type(data_float))
+
+data_int = int(data_float)
+data_str = str(data_float)
+data_bool = bool(data_float) # false hanya jika nilai float = 0
+
+print("data = ", data_int, " tipe = ", type(data_int))
+print("data = ", data_str, " tipe = ", type(data_str))
+print("data = ", data_bool, " tipe = ", type(data_bool))
+
+print('\n')
+
+## bool
+print("+++++++bool++++++")
 data_bool = False
-print("data : ", data_bool)
-print("- bertipe : ", type(data_bool))
+print("data = ", data_bool, " tipe = ", type(data_bool))
 
+data_int = int(data_bool)
+data_str = str(data_bool)
+data_float = float(data_bool) # false hanya jika nilai float = 0
 
+print("data = ", data_int, " tipe = ", type(data_int))
+print("data = ", data_str, " tipe = ", type(data_str))
+print("data = ", data_float, " tipe = ", type(data_float))
 
-## tipe data khusus
+print('\n')
 
-#bilangan kompleks
-data_complex = complex(5,6)
-print("data : ", data_complex)
-print("- bertipe : ", type(data_complex))
+## str
+print("+++++++str++++++")
+data_str = "";
+print("data = ", data_str, " tipe = ", type(data_str))
 
-# tipe data bahasa c
+# data_int = int(data_str) # string harus angka
+# data_float = float(data_str) # string harus angka
+data_bool = bool(data_str) # hanya bernilai false jika string kosong -> ""
 
-from ctypes import c_double
-data_c_double = c_double(10.5)
-print("data : ", data_c_double)
-print("- bertipe : ", type(data_c_double))
+# print("data = ", data_int, " tipe = ", type(data_int))
+# print("data = ", data_float, " tipe = ", type(data_float))
+print("data = ", data_bool, " tipe = ", type(data_bool))
