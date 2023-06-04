@@ -1,63 +1,77 @@
-# Bitwise, operasi biner
+# Operasi dapat dilakukan dengan peningkatan
+# operasi ditambah dengan assiment
 
-a = 9
-b = 5
-
-# bitwise or (|)
-c = a | b
-print('\n=========OR=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('nilai :',b,', binary : ',format(b,'08b'))
-print('---------------------------|')
-print('nilai :',c,', binary : ',format(c,'08b'))
+a= 5 # adalah assigment
+print('nilai a =', a)
 
 
-# bitwise and (&)
-c = a & b
-print('\n=========AND=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('nilai :',b,', binary : ',format(b,'08b'))
-print('---------------------------&')
-print('nilai :',c,', binary : ',format(c,'08b'))
+a += 1 # artinya a = a + 1
+print('nilai a += 1, nilai a menjadi ', a)
+
+a -= 2 # artinya a = a - 2
+print('nilai a -= 2, nilai a menjadi ', a)
+
+a *= 5 # artinya a = a * 5
+print('nilai a *= 5, nilai a menjadi ', a)
+
+
+a /= 3 # artinya a = a / 3
+print('nilai a /= 3, nilai a menjadi ', a)
+
+
+b = 10 
+print('\nnilai b = ',b)
+b %= 3
+print('nilai b %= 3, nilai b menjadi ', b)
+
+b = 10 
+print('\nnilai b = ',b)
+b //= 3
+print('nilai b //= 3, nilai b menjadi ', b)
+
+
+a = 5
+print('\nnilai a = ',a)
+a **= 3
+print('nilai a **= 3, nilai a menjadi ', a)
 
 
 
-# bitwise xor (^)
-c = a ^ b
-print('\n=========XOR=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('nilai :',b,', binary : ',format(b,'08b'))
-print('---------------------------^')
-print('nilai :',c,', binary : ',format(c,'08b'))
+# OPERASI BITWISE
+# OR
+c = True
+print('\nnilai c = ', c)
+c |= False
+print('nilai c |= False, nilai c menjadi ', c)
+c = False
+c |= False
+print('nilai c |= False, nilai c menjadi ', c)
 
 
+# AND
+c = True
+print('\nnilai c = ', c)
+c &= False
+print('nilai c &= False, nilai c menjadi ', c)
+c = True
+c &= True
+print('nilai c &= True, nilai c menjadi ', c)
 
-# bitwise NOT (~)
-c = ~a
-print('\n=========NOT=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('---------------------------~')
-print('nilai :',c,', binary : ',format(c,'08b'))
-print('---------------------------(^)')
-d = 0b00001001
-e = 0b11111111
-f = e^d
-print('nilai : ',f, 'binary : ',format(f,'08b'))
+# XOR
+c = True
+print('\nnilai c = ', c)
+c ^= False
+print('nilai c ^= False, nilai c menjadi ', c)
+c = True
+c ^= True
+print('nilai c ^= True, nilai c menjadi ', c)
 
-## shifting
-#shift right (>>)
-c = a >> 2
-print('\n=========>>=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('--------------------------->>')
-print('nilai :',c,', binary : ',format(c,'08b'))
-
-
-#shift left (<<)
-c = a << 2
-print('\n=========<<=========')
-print('nilai :',a,', binary : ',format(a,'08b'))
-print('---------------------------<<')
-print('nilai :',c,', binary : ',format(c,'08b'))
-
-
+# geser geser
+d = 0b1000
+print('\nnilai d = ',format(d,'04b'))
+#kanan
+d >>= 2
+print('\nnilai d = ',format(d,'04b'))
+#kiri
+d <<= 1
+print('\nnilai d = ',format(d,'04b'))
