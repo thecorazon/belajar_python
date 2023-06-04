@@ -1,68 +1,63 @@
-# Operasi Logika atau Boolean
+# Bitwise, operasi biner
 
-# not, or, and, xor
+a = 9
+b = 5
 
-# NOT
-print('======NOT=====')
-a = False
-c = not a
-print('data boolean a = ', a)
-print('-----------NOT')
-print('data boolean c = ', c)
+# bitwise or (|)
+c = a | b
+print('\n=========OR=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('nilai :',b,', binary : ',format(b,'08b'))
+print('---------------------------|')
+print('nilai :',c,', binary : ',format(c,'08b'))
 
-# OR
-print('======OR=====')
-a = False
-b = False
-c = a or b
-print(a, 'OR', b, '=',c)
-a = False
-b = True
-c = a or b
-print(a, 'OR', b, '=',c)
-a = True
-b = False
-c = a or b
-print(a, 'OR', b, '=',c)
-a = True
-b = True
-c = a or b
-print(a, 'OR', b, '=',c)
 
-# and
-print('======and=====')
-a = False
-b = False
-c = a and b
-print(a, 'and', b, '=',c)
-a = False
-b = True
-c = a and b
-print(a, 'and', b, '=',c)
-a = True
-b = False
-c = a and b
-print(a, 'and', b, '=',c)
-a = True
-b = True
-c = a and b
-print(a, 'and', b, '=',c)
+# bitwise and (&)
+c = a & b
+print('\n=========AND=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('nilai :',b,', binary : ',format(b,'08b'))
+print('---------------------------&')
+print('nilai :',c,', binary : ',format(c,'08b'))
 
-# ^
-print('======^=====')
-a = False
-b = False
+
+
+# bitwise xor (^)
 c = a ^ b
-print(a, '^', b, '=',c)
-a = False
-b = True
-c = a ^ b
-print(a, '^', b, '=',c)
-a = True
-b = False
-c = a ^ b
-print(a, '^', b, '=',c)
-a = True
-b = True
-c = a ^ b
-print(a, '^', b, '=',c)
+print('\n=========XOR=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('nilai :',b,', binary : ',format(b,'08b'))
+print('---------------------------^')
+print('nilai :',c,', binary : ',format(c,'08b'))
+
+
+
+# bitwise NOT (~)
+c = ~a
+print('\n=========NOT=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('---------------------------~')
+print('nilai :',c,', binary : ',format(c,'08b'))
+print('---------------------------(^)')
+d = 0b00001001
+e = 0b11111111
+f = e^d
+print('nilai : ',f, 'binary : ',format(f,'08b'))
+
+## shifting
+#shift right (>>)
+c = a >> 2
+print('\n=========>>=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('--------------------------->>')
+print('nilai :',c,', binary : ',format(c,'08b'))
+
+
+#shift left (<<)
+c = a << 2
+print('\n=========<<=========')
+print('nilai :',a,', binary : ',format(a,'08b'))
+print('---------------------------<<')
+print('nilai :',c,', binary : ',format(c,'08b'))
+
+
