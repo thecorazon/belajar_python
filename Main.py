@@ -1,77 +1,66 @@
-# Operasi dapat dilakukan dengan peningkatan
-# operasi ditambah dengan assiment
 
-a= 5 # adalah assigment
-print('nilai a =', a)
-
-
-a += 1 # artinya a = a + 1
-print('nilai a += 1, nilai a menjadi ', a)
-
-a -= 2 # artinya a = a - 2
-print('nilai a -= 2, nilai a menjadi ', a)
-
-a *= 5 # artinya a = a * 5
-print('nilai a *= 5, nilai a menjadi ', a)
-
-
-a /= 3 # artinya a = a / 3
-print('nilai a /= 3, nilai a menjadi ', a)
-
-
-b = 10 
-print('\nnilai b = ',b)
-b %= 3
-print('nilai b %= 3, nilai b menjadi ', b)
-
-b = 10 
-print('\nnilai b = ',b)
-b //= 3
-print('nilai b //= 3, nilai b menjadi ', b)
-
-
-a = 5
-print('\nnilai a = ',a)
-a **= 3
-print('nilai a **= 3, nilai a menjadi ', a)
+data = 'ini adalah string'
+print(data)
+print(type(data))
 
 
 
-# OPERASI BITWISE
-# OR
-c = True
-print('\nnilai c = ', c)
-c |= False
-print('nilai c |= False, nilai c menjadi ', c)
-c = False
-c |= False
-print('nilai c |= False, nilai c menjadi ', c)
+# 1. Cara membuat string
+
+'''
+1. Menggunakan single quote '...'
+1. Menggunakan double quote "..."
+
+'''
+
+data = 'menggunakan single quote'
+print(data)
+
+data = 'menggunakan double quote'
+print(data)
+
+print('"Halo, Apa Kabar?"')
+print("'Halo, Apa Kabar?'")
+print("ini adalah hari jum'at")
+
+# 2. Menggunakan tanda \
+# Membuat tanda ' menjadi string
+print('mari sholat jum\'at')
+print('g\'day, isn\'t it?')
 
 
-# AND
-c = True
-print('\nnilai c = ', c)
-c &= False
-print('nilai c &= False, nilai c menjadi ', c)
-c = True
-c &= True
-print('nilai c &= True, nilai c menjadi ', c)
+# backslash
+print("C:\\user\\Ucup")
 
-# XOR
-c = True
-print('\nnilai c = ', c)
-c ^= False
-print('nilai c ^= False, nilai c menjadi ', c)
-c = True
-c ^= True
-print('nilai c ^= True, nilai c menjadi ', c)
+# tab
+print('ucup\t\t\totong, jauhan')
+#backline
+print("ucup\botong")
 
-# geser geser
-d = 0b1000
-print('\nnilai d = ',format(d,'04b'))
-#kanan
-d >>= 2
-print('\nnilai d = ',format(d,'04b'))
-#kiri
-d <<= 1
-print('\nnilai d = ',format(d,'04b'))
+#newline
+print('baris pertama, \nbaris kedua') # LF -> line feed -> unix macos, linux
+print('baris pertama, \rbaris kedua') # CR -> carriage retun -> os dulu
+print('baris pertama, \r\nbaris kedua') #CRLF -> windows
+
+
+#3. string literal atau raw
+
+# hati-hati
+print('C:\new folder') #akan salah pathnya
+
+#menggunakan raw string
+print(r'C:\new folder')
+
+# multiline liteal string
+print("""
+Nama : Yohanes
+Kelas : 7 smp
+""")
+
+# multiline literal string dan raw
+
+print(r"""
+Nama : Yohanes
+Kelas : 7 smp\covid\19
+website : www.yohan.com/newId
+""")
